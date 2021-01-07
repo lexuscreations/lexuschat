@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <link rel="icon" href="/media/images/fevicon.ico" type="image/icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Public Chatroom" />
+    <meta name="keywords" content="free chatroom" />
+    <meta name="author" content="LokeshVishwakarma" />
+    <meta name="revised" content="lexuscreations.com, 21:38 02-01-2021" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="robot" content="index,follow" />
+    <meta http-equiv="content-language" content="en-US" />
+    <meta name="copyright" content="copyright 2020 lexuscreations.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LexusChat App</title>
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <section class="divBack">
+        <div class="loader loadercus l7">
+            <span class="ltc">
+            <h1 contenteditable="true" class="lt">Loading</h1>
+        </span>
+        </div>
+    </section>
+    <section class="chat__section">
+        <div class="brand">
+            <div class="logoSide">
+                <img draggable="false" style="cursor: pointer;" class="logoImg" id="logoImg" height="40" src="/media/images/fevicon.ico" alt="">
+                <h1>welcome</h1>
+            </div>
+            <div class="uNameSide">
+                <h1 class="userName"></h1>
+            </div>
+        </div>
+        <div class="message__area"></div>
+        <div style="display: inline-flex;width: 100%;">
+            <textarea id="textarea" autocomplete="off" cols="30" rows="1" placeholder="Write a message..."></textarea>
+            <button id="Sbutton" class="Sbutton">Send</button>
+        </div>
+    </section>
+    <div class="themeSection" id="themeSection"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/views/layouts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="/js/functions/homeMain.js"></script>
+</body>
+
+</html>

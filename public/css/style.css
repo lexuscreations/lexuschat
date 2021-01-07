@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: azure;
+    color: rebeccapurple;
+}
+
+*::-moz-selection {
+    background-color: azure;
+    color: rebeccapurple;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    display: none;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+    box-shadow: 0px 0px 12px 4px #b5b4b4b5;
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand .logoSide {
+    display: flex;
+    align-items: center;
+}
+
+.incoming h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+    width: max-content;
+}
+
+.outgoing h4 {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    color: #333;
+    font-size: 14px;
+    width: max-content;
+}
+
+.brand .uNameSide h1 {
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.brand .logoSide h1 {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    width: 100%;
+}
+
+textarea {
+    width: 90vw;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+textarea:focus {
+    box-shadow: 0px 0px 12px 4px #b5b4b4b5;
+}
+
+.Sbutton:active {
+    background: #7cb1b3;
+    box-shadow: 0px 0px 12px 4px #b5b4b4b5;
+}
+
+.Sbutton:focus {
+    background: #7cb1b3;
+    box-shadow: 0px 0px 12px 4px #b5b4b4b5;
+}
+
+.Sbutton {
+    width: 10vw;
+    border: none;
+    outline: none;
+    background: #FBFBFB;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.Sbutton:hover {
+    font-weight: bolder;
+    background: #a2d3aa;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming {
+    background: #0009;
+    color: #fff;
+    width: fit-content;
+    word-break: break-word;
+}
+
+.outgoing {
+    background: #74b377;
+    color: #fffefe;
+    margin-left: auto;
+    word-break: break-word;
+}
+
+.themeBlueOutActive {
+    background: #e9eafd;
+    color: #787986;
+}
+
+.themeBlueInActive {
+    background: #8F8BE8;
+    color: #fff;
+}
+
+.themeBlackOutActive {
+    background: #74b377;
+    color: #fffefe;
+}
+
+.themeBlackInActive {
+    background: #0009;
+    color: #fff;
+}
+
+.themeSection {
+    background: #8f8be8f2;
+    width: -webkit-fill-available;
+    max-width: 90%;
+    height: 502px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+.themeSectionActive {
+    display: block;
+}
+
+.themeDynamicDiv {
+    cursor: pointer;
+    box-shadow: 2px 2px 7px 2px rgb(112 104 104 / 50%);
+    color: beige;
+    margin: 10px;
+    background: #918de1;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.themeDynamicDiv h4 {
+    transition: 0.5s;
+}
+
+.themeDynamicDiv:hover h4 {
+    transition: 0.5s;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.themeSectionHeader {
+    text-align: center;
+    padding: 4px;
+    margin: 10px;
+    color: #7d7d7d;
+}
+
+.themeSectionHeader h1 {
+    font-size: x-large;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #a4a1d8c4;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #8f8be8c4;
+}
+
+@media only screen and (max-width: 600px) {
+    .brand {
+        display: block;
+    }
+    .brand .uNameSide h1 {
+        float: right;
+        position: relative;
+        bottom: 6px;
+    }
+}
